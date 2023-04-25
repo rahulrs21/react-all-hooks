@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import HookUseState from './components/HookUseState'
+import HookUseReducer from './components/HookUseReducer'
+import UseEffect from './components/UseEffect'
+import UseRef from './components/UseRef'
+import UseLayout from './components/UseLayout'
+import ImperativeHandle from './components/ImperativeHandle'
+import UseContextHook from './components/UseContextHook'
+import UseMemo from './components/UseMemo'
+import FetchDataAPI from './components/FetchDataAPI'
+import UseCallback from './components/UseCallback'
+import Practice from './components/Practice'
+import ReactTask1 from './components/ReactTask1'
+import ReactTask2 from './components/ReactTask2'
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=''>
+      <HookUseState /><hr />
+      <HookUseReducer /> <hr />
+      <UseEffect /> <hr />
+      <UseRef /> <hr />
+      <UseLayout /> <hr />
+      <ImperativeHandle /> <hr />
+      <UseContextHook /> <hr />
+      <UseMemo />  <hr />
+      <UseCallback />  <hr />
+      
+      <Practice />
+
+      {/* <ReactTask1 /> */}
+      <ReactTask2/>
+      
+      
+
+      <FetchDataAPI />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
+
+
+
+
+
